@@ -29,6 +29,8 @@ DEBUG = False
 
 ALLOWED_HOSTS = ["cryptoapi-cp.herokuapp.com"]
 
+ADMIN_ENABLED = False
+
 
 # Application definition
 
@@ -168,7 +170,10 @@ REST_FRAMEWORK = {
     'DATETIME_FORMAT': "%m/%d/%Y %I:%M%P",
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework.authentication.TokenAuthentication',
-    ]
+    ],
+    'DEFAULT_RENDERER_CLASSES': (
+        'rest_framework.renderers.JSONRenderer',
+    ),
 }
 
 django_heroku.settings(locals())
