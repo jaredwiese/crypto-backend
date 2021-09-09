@@ -27,7 +27,10 @@ SECRET_KEY = environ.get("MY_SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["cryptoapi-cp.herokuapp.com"]
+ALLOWED_HOSTS = [
+    "cryptoapi-cp.herokuapp.com",
+    "jared-cryptography.herokuapp.com"
+    ]
 
 ADMIN_ENABLED = False
 
@@ -142,8 +145,7 @@ STATIC_URL = '/static/'
 
 CORS_ALLOWED_ORIGINS = [
     'https://cryptoapi-cp.herokuapp.com',
-    'http://localhost:3000',
-    'http://localhost:8000',
+    'https://jared-cryptography.herokuapp.com',
     ]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
