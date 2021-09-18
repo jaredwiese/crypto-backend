@@ -1,4 +1,4 @@
-# crytpo-backend
+# crypto-backend
 Crypto Site Backend
 
 Django Backend for https://github.com/jaredwiese/crypto-site
